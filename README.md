@@ -12,15 +12,18 @@ This code implements the A* algorithm, which can be used to find the shortest pa
 
 ## Input
 
-number of paths "\n"
-number of nodes "\n"
-number of edges "\n"\n
-"\n"
-index of start "\t" index of end "\n" (repeat "number of paths" times)
-"\n"
-x coordinate of node n "\t" y coordinate of node n "\n" (repeat "number of nodes" times)
-"\n"
-index of start "\t" index of end "\n" (repeat "number of edges" times)
+- `number of paths \n`: number of paths
+- `number of nodes \n`: number of nodes
+- `number of edges \n`: number of edges
+
+**Paths:**
+- `index of start \t index of end` (repeat `number of paths` times)
+
+**Nodes:**
+- `x coordinate of node n \t y coordinate of node n` (repeat `number of nodes` times)
+
+**Edges:**
+- `index of start \t index of end` (repeat `number of edges` times)
 
 ## License
 

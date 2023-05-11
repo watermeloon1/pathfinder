@@ -14,7 +14,7 @@ This code implements the A* algorithm, which can be used to find the shortest pa
 
 number of paths "\n"
 number of nodes "\n"
-number of edges "\n"
+number of edges "\n"\n
 "\n"
 index of start "\t" index of end "\n" (repeat "number of paths" times)
 "\n"

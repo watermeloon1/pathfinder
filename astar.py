@@ -14,7 +14,7 @@ class Vertex:
         self.distance = MAX_int
         self.heuristic = MAX_int
         self.visited = False
-        
+
     def add_neighbour(self, vertex):
         self.neighbours.append(vertex)
 
@@ -24,7 +24,7 @@ class Graph:
     first = True
 
     def add_vertex(self,vertex):
-        self.vertices.append(vertex) 
+        self.vertices.append(vertex)
 
     def add_edge(self,u,v):
         self.vertices[u].add_neighbour(self.vertices[v])
@@ -34,10 +34,10 @@ class Graph:
 
         if not self.first:
             for z in self.vertices:
-                if z.distance != MAX_int:   
+                if z.distance != MAX_int:
                     z.distance = MAX_int
                     z.visited = False
-                    
+
         self.first = False
 
         queue = []
@@ -47,7 +47,7 @@ class Graph:
 
         while not self.vertices[end_index].visited:
             v = queue.pop(self.minimum_index(queue))
-                  
+
             for i in v.neighbours:
                 if not i.visited:
                     if i.distance > v.distance + distance(v, i) :
@@ -66,7 +66,7 @@ class Graph:
             if array[index].heuristic > array[i].heuristic :
                 index = i
         return index
-                
+
 graph = Graph()
 
 num_paths = int(input())

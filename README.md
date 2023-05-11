@@ -1,21 +1,27 @@
-## General information
-An A-star pathfinder algorithm, that finds the shortest route in a graph.
+# A* Algorithm in Python
 
-## INPUT
-number of paths /n
+This code implements the A* algorithm, which can be used to find the shortest path between two points in a graph. This implementation uses a 2D coordinate system to represent the nodes in the graph. This code way not meant to be an a polished software, just a reusable algorithm implementation in python, so you may have to make modifications.
 
-number of nodes /n
+## Usage
 
-number of edges /n
+1. Input the number of paths, number of nodes, and number of edges in the graph.
+2. Input the start and end nodes for each path.
+3. Input the x and y coordinates for each node.
+4. Input the nodes and weights for each edge.
+5. Call the `algorithm` function with the start and end node indices to get the shortest distance between them.
 
-/n
+## Input
 
-index of start /t index of end /n (PATH)(REPEAT AS MANY TIMES AS "number of paths")
+number of paths "\n"
+number of nodes "\n"
+number of edges "\n"
+"\n"
+index of start "\t" index of end "\n" (repeat "number of paths" times)
+"\n"
+x coordinate of node n "\t" y coordinate of node n "\n" (repeat "number of nodes" times)
+"\n"
+index of start "\t" index of end "\n" (repeat "number of edges" times)
 
-/n
+## License
 
-x coordinate of node n /t y coordinate of node n /n (NODE)(REPEAT AS MANY TIMES AS "number of nodes")
-
-/n
-
-index of start /t index of end /n (EDGE)(REPEAT AS MANY TIMES AS "number of edges")
+This project is licensed under the terms of the [MIT license](license.md).
